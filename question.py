@@ -9,3 +9,31 @@ route = [
             ],
     },
 ]
+
+adventure_question = [
+    {
+        'question': 'What is the output of the following code? print("Hello, world!")',
+        'answer': ['Hello, world!'],
+
+    },
+    {
+        'question': 'What is this [1, 2, 3, "apple", "banana"] a dictionary or a list?',
+        'answer': ['list'],
+
+    },
+    {
+        'question': 'Is it possible to change elements in tupl after creation?',
+        'answer': ['no'],
+
+    },
+    {
+        'question': 'What word defines the function?',
+        'answer': ['def'],
+
+    },
+    {
+        'question': 'What function generates a sequence of numbers',
+        'answer': ['range', 'range()'],
+
+    },
+]
