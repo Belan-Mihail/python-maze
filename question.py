@@ -11,7 +11,7 @@ print(route[0])
 adventure_questions = [
     {
         'question': 'What is the output of the following code? print("Hello, world!")',
-        'answer': ['Hello, world!'],
+        'answer': ['hello, world!'],
 
     },
     {
