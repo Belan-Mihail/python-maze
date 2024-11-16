@@ -25,8 +25,14 @@ def play_adventure(route, adventure_questions):
             print(f"You covered {distance} meters before Python ate you.")
             break
         else:
+            
             if answer in ['left', 'l', 'L' 'right', 'r', 'R', 's', 'S', 'straight']:
                 
+                random.shuffle(chance_list)
+                random_index = random.randint(0, len(chance_list) - 1)
+                random_element = chance_list[random_index]
+                print(random_element)
+
                 random_question_index = random.randint(0, len(adventure_questions) - 1)
                 question = adventure_questions.pop(random_question_index)
                 print()
