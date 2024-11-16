@@ -31,23 +31,39 @@ def play_adventure(route, adventure_questions):
                 random.shuffle(chance_list)
                 random_index = random.randint(0, len(chance_list) - 1)
                 way_to_right = chance_list[random_index]
-                print(way_to_right)
-
+                
                 random.shuffle(chance_list)
                 random_index = random.randint(0, len(chance_list) - 1)
                 way_to_left = chance_list[random_index]
                 print(way_to_left)
-
+                
                 random.shuffle(chance_list)
                 random_index = random.randint(0, len(chance_list) - 1)
                 way_to_straight = chance_list[random_index]
-                print(way_to_straight)
-                
 
-                random_question_index = random.randint(0, len(adventure_questions) - 1)
-                question = adventure_questions.pop(random_question_index)
-                print()
-                print(question['question'], quit_game)
+                if answer in ['left', 'l', 'L'] and  way_to_left == "AL":
+                    print()
+                    print("You chose the right path and found an extra life.")
+                    print()
+                    life = life + 1
+                    print(f"Now you have {life} lifes")
+                    print()      
+                elif answer in ['left', 'l', 'L'] and  way_to_left == "FW":
+                    print()
+                    print("This time you were lucky, you found a path without Python")
+                    print()
+                    print(f"You have advanced {distance} meters deeper into the Python Maze")
+                    print()
+                else:
+                    print()
+                    print("You are being attacked by a python!")
+                    random_question_index = random.randint(0, len(adventure_questions) - 1)
+                    question = adventure_questions.pop(random_question_index)
+                    print()
+                    print(question['question'], quit_game)
+
+                
+                
                 user_answer = input().lower()
                 if user_answer.lower() == "q":
                     print()
