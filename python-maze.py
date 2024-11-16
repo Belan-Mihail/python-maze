@@ -6,7 +6,7 @@ from question import adventure_questions as ad
 
 def play_adventure(route, adventure_questions):
     
-    chance_list = ["AD"] * 3 + ["FW"] * 6 + ["Q"] * 21
+    chance_list = ["AL"] * 3 + ["FW"] * 6 + ["Q"] * 21
     adventure_questions = ad[:]
     
     distance = 0
@@ -30,8 +30,19 @@ def play_adventure(route, adventure_questions):
                 
                 random.shuffle(chance_list)
                 random_index = random.randint(0, len(chance_list) - 1)
-                random_element = chance_list[random_index]
-                print(random_element)
+                way_to_right = chance_list[random_index]
+                print(way_to_right)
+
+                random.shuffle(chance_list)
+                random_index = random.randint(0, len(chance_list) - 1)
+                way_to_left = chance_list[random_index]
+                print(way_to_left)
+
+                random.shuffle(chance_list)
+                random_index = random.randint(0, len(chance_list) - 1)
+                way_to_straight = chance_list[random_index]
+                print(way_to_straight)
+                
 
                 random_question_index = random.randint(0, len(adventure_questions) - 1)
                 question = adventure_questions.pop(random_question_index)
@@ -76,7 +87,7 @@ def play_adventure(route, adventure_questions):
         print('You lost your last life and Python ate you.')
             
            
-    if not answer == "q":
+    if not answer == "q" or not user_answer == "q":
         play_again = input("Will you try again? Type 'y' for yes or type 'n' for no: ").lower()
         if play_again == 'y':
             adventure_questions = ad[:]
