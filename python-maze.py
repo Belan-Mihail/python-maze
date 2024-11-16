@@ -70,11 +70,11 @@ def play_adventure(route, adventure_questions):
         print('You lost your last life and Python ate you.')
             
            
-
-    play_again = input("Will you try again? Type 'y' for yes or type 'n' for no: ").lower()
-    if play_again == 'y':
-        adventure_questions = ad[:]
-        play_adventure(route, adventure_questions)
+    if not answer == "q":
+        play_again = input("Will you try again? Type 'y' for yes or type 'n' for no: ").lower()
+        if play_again == 'y':
+            adventure_questions = ad[:]
+            play_adventure(route, adventure_questions)
                 
 
 
