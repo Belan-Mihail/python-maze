@@ -6,6 +6,7 @@ from question import adventure_questions as ad
 
 def play_adventure(route, adventure_questions):
     
+    chance_list = ["AD"] * 3 + ["FW"] * 6 + ["Q"] * 21
     adventure_questions = ad[:]
     
     distance = 0
