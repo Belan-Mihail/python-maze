@@ -47,11 +47,15 @@ def play_adventure(route, adventure_questions):
                     print()
                     life = life + 1
                     print(f"Now you have {life} lifes")
+                    print()
+                    distance = distance + 100
+                    print(f"You have advanced {distance} meters deeper into the Python Maze")
                     print()      
                 elif answer in ['left', 'l', 'L'] and  way_to_left == "FW":
                     print()
                     print("This time you were lucky, you found a path without Python")
                     print()
+                    distance = distance + 100
                     print(f"You have advanced {distance} meters deeper into the Python Maze")
                     print()
                 else:
@@ -85,7 +89,6 @@ def play_adventure(route, adventure_questions):
                                 print(f"You've wasted your life. {life} more and the python will eat you.")
                                 print()
 
-
             else:
                 print('Not a valid option. You need to choose: left(l) or right(r)')
 
@@ -102,7 +105,7 @@ def play_adventure(route, adventure_questions):
         print('You lost your last life and Python ate you.')
             
            
-    if not answer == "q" or not user_answer == "q":
+    if not answer == "q" and not user_answer == "q":
         play_again = input("Will you try again? Type 'y' for yes or type 'n' for no: ").lower()
         if play_again == 'y':
             adventure_questions = ad[:]
