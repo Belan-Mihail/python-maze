@@ -50,7 +50,11 @@ def play_adventure(route, adventure_questions):
                     print()
                     distance = distance + 100
                     print(f"You have advanced {distance} meters deeper into the Python Maze")
-                    print()      
+                    print()
+                    print("other paths led you:")    
+                    print(f"right to {"extra life" if way_to_right == "AL" else "free path" if way_to_right == "FW" else "battle with the python"}:")  
+                    print(f"straight to {"extra life" if way_to_straight == "AL" else "free path" if way_to_straight == "FW" else "battle with the python"}:")
+                    print()
                 elif answer in ['left', 'l', 'L'] and  way_to_left == "FW":
                     print()
                     print("This time you were lucky, you found a path without Python")
@@ -58,9 +62,18 @@ def play_adventure(route, adventure_questions):
                     distance = distance + 100
                     print(f"You have advanced {distance} meters deeper into the Python Maze")
                     print()
+                    print("other paths led you:")    
+                    print(f"right to {"extra life" if way_to_right == "AL" else "free path" if way_to_right == "FW" else "battle with the python"}:")  
+                    print(f"straight to {"extra life" if way_to_straight == "AL" else "free path" if way_to_straight == "FW" else "battle with the python"}:")
+                    print()
                 else:
                     print()
                     print("You are being attacked by a python!")
+                    print()
+                    print("other paths led you:")    
+                    print(f"right to {"extra life" if way_to_right == "AL" else "free path" if way_to_right == "FW" else "battle with the python"}")  
+                    print(f"straight to {"extra life" if way_to_straight == "AL" else "free path" if way_to_straight == "FW" else "battle with the python"}")
+                    print()
                     random_question_index = random.randint(0, len(adventure_questions) - 1)
                     question = adventure_questions.pop(random_question_index)
                     print()
