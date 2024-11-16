@@ -61,32 +61,31 @@ def play_adventure(route, adventure_questions):
                     question = adventure_questions.pop(random_question_index)
                     print()
                     print(question['question'], quit_game)
-
-                
-                
-                user_answer = input().lower()
-                if user_answer.lower() == "q":
-                    print()
-                    life = 0
-                    print(f"You covered {distance} meters before Python ate you.")
-                    break
-                else:
-                    if user_answer in question['answer']:
-
-                        print("Correct!")
-                        distance = distance + 100
-
-                        print(f"You have advanced {distance} meters deeper into the Python Maze")
+                    user_answer = input().lower()
+                    if user_answer.lower() == "q":
                         print()
-
+                        life = 0
+                        print(f"You covered {distance} meters before Python ate you.")
+                        break
                     else:
-                        print("Incorrect.")
+                        if user_answer in question['answer']:
 
-                        life = life - 1
+                            print("Correct!")
+                            distance = distance + 100
 
-                        if life >= 1:
-                            print(f"You've wasted your life. {life} more and the python will eat you.")
+                            print(f"You have advanced {distance} meters deeper into the Python Maze")
                             print()
+
+                        else:
+                            print("Incorrect.")
+
+                            life = life - 1
+
+                            if life >= 1:
+                                print(f"You've wasted your life. {life} more and the python will eat you.")
+                                print()
+
+
             else:
                 print('Not a valid option. You need to choose: left(l) or right(r)')
 
