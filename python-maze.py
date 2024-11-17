@@ -14,13 +14,14 @@ def play_adventure(route, adventure_questions):
     distance = 0
     life = 3
     quit_game = '(if you want to exit the game, press "q". But then Python will eat you)'
-
+    loop_count = 0
 
     while adventure_questions and life > 0:
 
         random.shuffle(route)
         current_route_questions = route[0]
-        if distance < 50:
+        loop_count += 1
+        if loop_count < 2:
             print() 
             print() 
             print() 
@@ -141,18 +142,14 @@ def play_adventure(route, adventure_questions):
                             print("Correct!")
                             time.sleep(0.5)
                             distance = distance + 100
-
                             print(f"You have advanced {distance} meters deeper into the Python Maze")
                             time.sleep(0.5)
                             
-
                         else:
                             print()
                             time.sleep(0.5)
                             print("Incorrect.")
                             time.sleep(0.5)
-                            
-
                             life = life - 1
 
                             if life >= 1:
@@ -162,64 +159,84 @@ def play_adventure(route, adventure_questions):
 
                 if answer in ['right', 'r', 'R'] and  way_to_right == "AL":
                     print()
+                    time.sleep(0.5)
                     print("You chose the right path and found an extra life.")
-                    print()
+                    time.sleep(0.5)
                     life = life + 1
                     print(f"Now you have {life} lifes")
-                    print()
+                    time.sleep(0.5)
                     distance = distance + 100
                     print(f"You have advanced {distance} meters deeper into the Python Maze")
                     print()
-                    print("other paths led you:")    
+                    time.sleep(0.5)
+                    print("other paths led you:") 
+                    time.sleep(0.5)      
                     print(f"left to {"extra life" if way_to_left == "AL" else "free path" if way_to_left == "FW" else "battle with the python"}")  
+                    time.sleep(0.5)    
                     print(f"straight to {"extra life" if way_to_straight == "AL" else "free path" if way_to_straight == "FW" else "battle with the python"}")
-                    print()
+                    time.sleep(0.5)    
+
                 elif answer in ['right', 'r', 'R'] and  way_to_right == "FW":
                     print()
+                    time.sleep(0.5)
                     print("This time you were lucky, you found a path without Python")
-                    print()
+                    time.sleep(0.5)
                     distance = distance + 100
                     print(f"You have advanced {distance} meters deeper into the Python Maze")
                     print()
-                    print("other paths led you:")    
+                    time.sleep(0.5)
+                    print("other paths led you:") 
+                    time.sleep(0.5)   
                     print(f"left to {"extra life" if way_to_left == "AL" else "free path" if way_to_left == "FW" else "battle with the python"}")  
+                    time.sleep(0.5) 
                     print(f"straight to {"extra life" if way_to_straight == "AL" else "free path" if way_to_straight == "FW" else "battle with the python"}")
-                    print()
+                    time.sleep(0.5) 
+
                 elif answer in ['right', 'r', 'R'] and  way_to_right == "Q":
                     print()
+                    time.sleep(0.5)
                     print("You are being attacked by a python!")
                     print()
-                    print("other paths led you:")    
+                    time.sleep(0.5)
+                    print("other paths led you:") 
+                    time.sleep(0.5)   
                     print(f"left to {"extra life" if way_to_left == "AL" else "free path" if way_to_left == "FW" else "battle with the python"}")  
+                    time.sleep(0.5)   
                     print(f"straight to {"extra life" if way_to_straight == "AL" else "free path" if way_to_straight == "FW" else "battle with the python"}")
                     print()
+                    time.sleep(0.5)   
                     random_question_index = random.randint(0, len(adventure_questions) - 1)
                     question = adventure_questions.pop(random_question_index)
+                    print(f"{question['question']}\n{quit_game}")
                     print()
-                    print(question['question'], quit_game)
+                    time.sleep(0.5)
                     user_answer = input().lower()
                     if user_answer.lower() == "q":
-                        print()
+                        time.sleep(0.5)
                         life = 0
                         print(f"You covered {distance} meters before Python ate you.")
+                        time.sleep(0.5)
                         break
                     else:
                         if user_answer in question['answer']:
-
-                            print("Correct!")
-                            distance = distance + 100
-
-                            print(f"You have advanced {distance} meters deeper into the Python Maze")
                             print()
+                            time.sleep(0.5)
+                            print("Correct!")
+                            time.sleep(0.5)
+                            distance = distance + 100
+                            print(f"You have advanced {distance} meters deeper into the Python Maze")
+                            time.sleep(0.5)
 
                         else:
+                            print()
+                            time.sleep(0.5)
                             print("Incorrect.")
-
+                            time.sleep(0.5)
                             life = life - 1
-
+                            
                             if life >= 1:
                                 print(f"You've wasted your life. {life} more and the python will eat you.")
-                                print()
+                                time.sleep(0.5)
 
 
                 if answer in ['straight', 's', 'S'] and  way_to_straight == "AL":
