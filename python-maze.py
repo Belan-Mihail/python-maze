@@ -14,6 +14,7 @@ def play_adventure(route, adventure_questions):
     life = 3
     quit_game = ' If you want to exit the game, press "q". But then Python will eat you'
 
+
     while adventure_questions and life > 0:
 
         random.shuffle(route)
@@ -57,17 +58,17 @@ def play_adventure(route, adventure_questions):
                 random.shuffle(chance_list)
                 random_index = random.randint(0, len(chance_list) - 1)
                 way_to_right = chance_list[random_index]
-                print(way_to_right)
+                
                 
                 random.shuffle(chance_list)
                 random_index = random.randint(0, len(chance_list) - 1)
                 way_to_left = chance_list[random_index]
-                print(way_to_left)
+                
                 
                 random.shuffle(chance_list)
                 random_index = random.randint(0, len(chance_list) - 1)
                 way_to_straight = chance_list[random_index]
-                print(way_to_straight)
+                
 
                 if answer in ['left', 'l', 'L'] and  way_to_left == "AL":
                     print()
