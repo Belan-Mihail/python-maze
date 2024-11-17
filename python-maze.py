@@ -1,4 +1,5 @@
 import random
+import time
 from question import route
 from question import adventure_questions as ad
 
@@ -17,10 +18,19 @@ def play_adventure(route, adventure_questions):
 
         random.shuffle(route)
         current_route_questions = route[0]
+        print()
+        time.sleep(0.5)
+        print()
+        time.sleep(0.5)
+        print()
+        time.sleep(0.5)
         print(current_route_questions, quit_game)
         answer = input().lower()
         if answer.lower() == "q":
             print()
+            time.sleep(0.5)
+            print()
+            time.sleep(0.5)
             life = 0
             print(f"You covered {distance} meters before Python ate you.")
             break
