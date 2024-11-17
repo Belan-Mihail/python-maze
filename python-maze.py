@@ -164,6 +164,68 @@ def play_adventure(route, adventure_questions):
                             if life >= 1:
                                 print(f"You've wasted your life. {life} more and the python will eat you.")
                                 print()
+
+
+                if answer in ['straight', 's', 'S'] and  way_to_straight == "AL":
+                    print()
+                    print("You chose the right path and found an extra life.")
+                    print()
+                    life = life + 1
+                    print(f"Now you have {life} lifes")
+                    print()
+                    distance = distance + 100
+                    print(f"You have advanced {distance} meters deeper into the Python Maze")
+                    print()
+                    print("other paths led you:")    
+                    print(f"left to {"extra life" if way_to_left == "AL" else "free path" if way_to_left == "FW" else "battle with the python"}")  
+                    print(f"right to {"extra life" if way_to_right == "AL" else "free path" if way_to_right == "FW" else "battle with the python"}")
+                    print()
+                elif answer in ['straight', 's', 'S'] and  way_to_straight == "FW":
+                    print()
+                    print("This time you were lucky, you found a path without Python")
+                    print()
+                    distance = distance + 100
+                    print(f"You have advanced {distance} meters deeper into the Python Maze")
+                    print()
+                    print("other paths led you:")    
+                    print(f"left to {"extra life" if way_to_left == "AL" else "free path" if way_to_left == "FW" else "battle with the python"}")  
+                    print(f"right to {"extra life" if way_to_right == "AL" else "free path" if way_to_right == "FW" else "battle with the python"}")
+                    print()
+                elif answer in ['straight', 's', 'S'] and  way_to_straight == "Q":
+                    print()
+                    print("You are being attacked by a python!")
+                    print()
+                    print("other paths led you:")    
+                    print(f"left to {"extra life" if way_to_left == "AL" else "free path" if way_to_left == "FW" else "battle with the python"}")  
+                    print(f"right to {"extra life" if way_to_right == "AL" else "free path" if way_to_right == "FW" else "battle with the python"}")
+                    print()
+                    random_question_index = random.randint(0, len(adventure_questions) - 1)
+                    question = adventure_questions.pop(random_question_index)
+                    print()
+                    print(question['question'], quit_game)
+                    user_answer = input().lower()
+                    if user_answer.lower() == "q":
+                        print()
+                        life = 0
+                        print(f"You covered {distance} meters before Python ate you.")
+                        break
+                    else:
+                        if user_answer in question['answer']:
+
+                            print("Correct!")
+                            distance = distance + 100
+
+                            print(f"You have advanced {distance} meters deeper into the Python Maze")
+                            print()
+
+                        else:
+                            print("Incorrect.")
+
+                            life = life - 1
+
+                            if life >= 1:
+                                print(f"You've wasted your life. {life} more and the python will eat you.")
+                                print()
             else:
                 print('Not a valid option. You need to choose: left(l) or right(r)')
 
