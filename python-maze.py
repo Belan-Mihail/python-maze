@@ -10,38 +10,44 @@ def play_adventure(route, adventure_questions):
     chance_list = ["AL"] * 5 + ["FW"] * 10 + ["Q"] * 45
     adventure_questions = ad[:]
     
+    
     distance = 0
     life = 3
-    quit_game = 'If you want to exit the game, press "q". But then Python will eat you'
+    quit_game = '(if you want to exit the game, press "q". But then Python will eat you)'
 
 
     while adventure_questions and life > 0:
 
         random.shuffle(route)
         current_route_questions = route[0]
-        print() 
-        print() 
-        print() 
-        print() 
-        print() 
-        print() 
-        print()
-        print() 
-        print() 
-        print() 
-        print() 
-        print() 
-        print() 
-        print() 
-        print() 
-        print() 
-        print()  
-        time.sleep(0.5)
-        print()
-        time.sleep(0.5)
-        print()
+        if distance < 50:
+            print() 
+            print() 
+            print() 
+            print() 
+            print() 
+            print() 
+            print()
+            print() 
+            print() 
+            print() 
+            print() 
+            print() 
+            print() 
+            print() 
+            print() 
+            print() 
+            print()
+            time.sleep(0.5)
+            print()
+            time.sleep(0.5)
+            print()
+            time.sleep(0.5)
+        else:
+            print()  
         time.sleep(0.5)
         print(f"{current_route_questions}\n{quit_game}")
+        time.sleep(0.5)
         answer = input().lower()
         if answer.lower() == "q":
             print()
@@ -86,8 +92,7 @@ def play_adventure(route, adventure_questions):
                     time.sleep(0.5)
                     print(f"straight to {"extra life" if way_to_straight == "AL" else "free path" if way_to_straight == "FW" else "battle with the python"}")
                     time.sleep(0.5)
-                    print()
-                    time.sleep(0.5)
+                    
                 elif answer in ['left', 'l', 'L'] and  way_to_left == "FW":
                     print()
                     time.sleep(0.5)
@@ -103,8 +108,7 @@ def play_adventure(route, adventure_questions):
                     time.sleep(0.5)
                     print(f"straight to {"extra life" if way_to_straight == "AL" else "free path" if way_to_straight == "FW" else "battle with the python"}")
                     time.sleep(0.5)
-                    print()
-                    time.sleep(0.5)
+                    
                 elif answer in ['left', 'l', 'L'] and  way_to_left == "Q":
                     print()
                     time.sleep(0.5)
@@ -121,6 +125,7 @@ def play_adventure(route, adventure_questions):
                     random_question_index = random.randint(0, len(adventure_questions) - 1)
                     question = adventure_questions.pop(random_question_index)
                     print(f"{question['question']}\n{quit_game}")
+                    print()
                     time.sleep(0.5)
                     user_answer = input().lower()
                     if user_answer.lower() == "q":
@@ -139,8 +144,7 @@ def play_adventure(route, adventure_questions):
 
                             print(f"You have advanced {distance} meters deeper into the Python Maze")
                             time.sleep(0.5)
-                            print()
-                            time.sleep(0.5)
+                            
 
                         else:
                             print()
@@ -154,8 +158,7 @@ def play_adventure(route, adventure_questions):
                             if life >= 1:
                                 print(f"You've wasted your life. {life} more and the python will eat you.")
                                 time.sleep(0.5)
-                                print()
-                                time.sleep(0.5)
+                                
 
                 if answer in ['right', 'r', 'R'] and  way_to_right == "AL":
                     print()
