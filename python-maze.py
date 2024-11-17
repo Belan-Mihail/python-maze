@@ -12,7 +12,7 @@ def play_adventure(route, adventure_questions):
     
     distance = 0
     life = 3
-    quit_game = ' If you want to exit the game, press "q". But then Python will eat you'
+    quit_game = 'If you want to exit the game, press "q". But then Python will eat you'
 
 
     while adventure_questions and life > 0:
@@ -41,7 +41,7 @@ def play_adventure(route, adventure_questions):
         time.sleep(0.5)
         print()
         time.sleep(0.5)
-        print(current_route_questions, quit_game)
+        print(f"{current_route_questions}\n{quit_game}")
         answer = input().lower()
         if answer.lower() == "q":
             print()
@@ -120,7 +120,7 @@ def play_adventure(route, adventure_questions):
                     time.sleep(0.5)
                     random_question_index = random.randint(0, len(adventure_questions) - 1)
                     question = adventure_questions.pop(random_question_index)
-                    print(question['question'], quit_game)
+                    print(f"{question['question']}\n{quit_game}")
                     time.sleep(0.5)
                     user_answer = input().lower()
                     if user_answer.lower() == "q":
