@@ -9,7 +9,7 @@ colorama.init(autoreset=True)
 
 def play_adventure(route, adventure_questions):
     
-    chance_list = ["AL"] * 59 + ["FW"] * 10 + ["Q"] * 45
+    chance_list = ["AL"] * 5 + ["FW"] * 10 + ["Q"] * 45
     adventure_questions = ad[:]
     
     
