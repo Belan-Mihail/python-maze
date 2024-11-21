@@ -349,7 +349,7 @@ def play_adventure(route, adventure_questions):
         else:
             time.sleep(0.5)
             print()
-            print(f'{Style.BRIGHT}{Fore.R}You tried to escape the maze but Python ate you')
+            print(f'{Style.BRIGHT}{Fore.RED}You tried to escape the maze but Python ate you')
             
            
     if not answer == "q" and not user_answer == "q":
