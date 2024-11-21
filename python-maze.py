@@ -4,7 +4,7 @@ import colorama
 from question import route
 from question import adventure_questions as ad
 
-from colorama import Fore, Back, Style
+from colorama import Fore, Style
 colorama.init(autoreset=True)
 
 def play_adventure(route, adventure_questions):
@@ -89,7 +89,7 @@ def play_adventure(route, adventure_questions):
                     print(f"{Style.BRIGHT}{Fore.YELLOW}You have advanced {Style.BRIGHT}{Fore.GREEN}{distance}{Style.BRIGHT}{Fore.YELLOW} meters deeper into the Python Maze")
                     print()
                     time.sleep(0.5)
-                    print(f"{Style.BRIGHT}{Fore.WHITE}other paths led you:") 
+                    print(f"{Style.DIM}{Fore.WHITE}other paths led you:") 
                     time.sleep(0.5)   
                     print(f"{Style.BRIGHT}{Fore.YELLOW}right to {(Style.BRIGHT + Fore.GREEN + 'extra life') if way_to_right == "AL" else (Style.BRIGHT + Fore.YELLOW + 'free path') if way_to_right == "FW" else (Style.BRIGHT + Fore.RED + 'battle with the python')}")  
                     time.sleep(0.5)
@@ -99,17 +99,17 @@ def play_adventure(route, adventure_questions):
                 elif answer in ['left', 'l', 'L'] and  way_to_left == "FW":
                     print()
                     time.sleep(0.5)
-                    print("This time you were lucky, you found a path without Python")
+                    print(f"{Style.BRIGHT}{Fore.YELLOW}This time you were lucky, you found a path without Python")
                     time.sleep(0.5)
                     distance = distance + 100
-                    print(f"You have advanced {distance} meters deeper into the Python Maze")
+                    print(f"{Style.BRIGHT}{Fore.YELLOW}You have advanced{Style.BRIGHT}{Fore.GREEN} {distance} {Style.BRIGHT}{Fore.YELLOW}meters deeper into the Python Maze")
                     print()
                     time.sleep(0.5)
-                    print("other paths led you:") 
+                    print(f"{Style.DIM}{Fore.WHITE}other paths led you:") 
                     time.sleep(0.5)   
-                    print(f"right to {"extra life" if way_to_right == "AL" else "free path" if way_to_right == "FW" else "battle with the python"}")  
+                    print(f"{Style.BRIGHT}{Fore.YELLOW}right to {(Style.BRIGHT + Fore.GREEN + 'extra life') if way_to_right == "AL" else (Style.BRIGHT + Fore.WHITE + 'free path') if way_to_right == "FW" else (Style.BRIGHT + Fore.RED + 'battle with the python')}")  
                     time.sleep(0.5)
-                    print(f"straight to {"extra life" if way_to_straight == "AL" else "free path" if way_to_straight == "FW" else "battle with the python"}")
+                    print(f"{Style.BRIGHT}{Fore.YELLOW}straight to {(Style.BRIGHT + Fore.GREEN + 'extra life') if way_to_straight == "AL" else (Style.BRIGHT + Fore.WHITE + 'free path') if way_to_straight == "FW" else (Style.BRIGHT + Fore.RED + 'battle with the python')}")
                     time.sleep(0.5)
                     
                 elif answer in ['left', 'l', 'L'] and  way_to_left == "Q":
