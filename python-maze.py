@@ -209,35 +209,35 @@ def play_adventure(route, adventure_questions):
                     time.sleep(0.5)   
                     random_question_index = random.randint(0, len(adventure_questions) - 1)
                     question = adventure_questions.pop(random_question_index)
-                    print(f"{question['question']}\n{quit_game}")
+                    print(f"{Style.BRIGHT}{Fore.YELLOW}{question['question']}\n{Style.DIM}{Fore.LIGHTYELLOW_EX}{quit_game}")
                     print()
                     time.sleep(0.5)
                     user_answer = input().lower()
                     if user_answer.lower() == "q":
                         time.sleep(0.5)
                         life = 0
-                        print(f"You covered {distance} meters before Python ate you.")
+                        print(f"{Style.BRIGHT}{Fore.YELLOW}You covered {Style.BRIGHT}{Fore.GREEN}{distance} {Style.BRIGHT}{Fore.YELLOW}meters before Python ate you.")
                         time.sleep(0.5)
                         break
                     else:
                         if user_answer in question['answer']:
                             print()
                             time.sleep(0.5)
-                            print("Correct!")
+                            print(f"{Style.BRIGHT}{Fore.GREEN}Correct!")
                             time.sleep(0.5)
                             distance = distance + 100
-                            print(f"You have advanced {distance} meters deeper into the Python Maze")
+                            print(f"{Style.BRIGHT}{Fore.YELLOW}You have advanced {Style.BRIGHT}{Fore.GREEN}{distance} {Style.BRIGHT}{Fore.YELLOW}meters deeper into the Python Maze")
                             time.sleep(0.5)
 
                         else:
                             print()
                             time.sleep(0.5)
-                            print("Incorrect.")
+                            print(f"{Style.BRIGHT}{Fore.RED}Incorrect.")
                             time.sleep(0.5)
                             life = life - 1
                             
                             if life >= 1:
-                                print(f"You've wasted your life. {life} more and the python will eat you.")
+                                print(f"{Style.BRIGHT}{Fore.YELLOW}You've wasted your life. {Style.BRIGHT}{Fore.RED}{life} {Style.BRIGHT}{Fore.YELLOW}more and the python will eat you.")
                                 time.sleep(0.5)
 
 
