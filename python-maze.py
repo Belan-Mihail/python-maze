@@ -332,28 +332,28 @@ def play_adventure(route, adventure_questions):
     if life > 0:
         time.sleep(0.5)
         print()
-        print("Congratulations!")
+        print(f"{Style.BRIGHT}{Fore.GREEN}Congratulations!")
         time.sleep(0.5)
         print()
-        print("You finally found the portal that led you out of this labyrinth.")
+        print(f"{Style.BRIGHT}{Fore.GREEN}You finally found the portal that led you out of this labyrinth.")
         time.sleep(0.5)
         print()
-        print("There is another great news. You ate Python")
+        print(f"{Style.BRIGHT}{Fore.GREEN}There is another great news. You ate Python")
     else:
         if not answer == "q" and not user_answer == "q":
             time.sleep(0.5)
             print()
-            print('You lost your last life and Python ate you.')
+            print(f'{Style.BRIGHT}{Fore.RED}You lost your last life and Python ate you.')
             time.sleep(0.5)
             print()
         else:
             time.sleep(0.5)
             print()
-            print('you tried to escape the maze but Python ate you')
+            print(f'{Style.BRIGHT}{Fore.R}You tried to escape the maze but Python ate you')
             
            
     if not answer == "q" and not user_answer == "q":
-        play_again = input("Will you try again? Type 'y' for yes or type 'n' for no: ").lower()
+        play_again = input(f"{Style.DIM}{Fore.LIGHTYELLOW_EX}Will you try again? Type 'y' for yes or type 'n' for no: ").lower()
         if play_again == 'y':
             adventure_questions = ad[:]
             play_adventure(route, adventure_questions)
