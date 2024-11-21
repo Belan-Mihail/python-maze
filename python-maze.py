@@ -1,9 +1,11 @@
 import random
 import time
+import colorama
 from question import route
 from question import adventure_questions as ad
 
-
+from colorama import Fore, Back, Style
+colorama.init(autoreset=True)
 
 def play_adventure(route, adventure_questions):
     
@@ -47,7 +49,7 @@ def play_adventure(route, adventure_questions):
         else:
             print()  
         time.sleep(0.5)
-        print(f"{current_route_questions}\n{quit_game}")
+        print(f"{current_route_questions}\n  {Style.DIM}{Fore.YELLOW} {quit_game}")
         time.sleep(0.5)
         answer = input().lower()
         if answer.lower() == "q":
