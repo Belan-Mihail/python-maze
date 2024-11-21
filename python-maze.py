@@ -244,20 +244,20 @@ def play_adventure(route, adventure_questions):
                 if answer in ['straight', 's', 'S'] and  way_to_straight == "AL":
                     print()
                     time.sleep(0.5)
-                    print("You chose the right path and found an extra life.")
+                    print(f"{Style.BRIGHT}{Fore.GREEN}You chose the right path and found an extra life.")
                     time.sleep(0.5)
                     life = life + 1
-                    print(f"Now you have {life} lifes")
+                    print(f"{Style.BRIGHT}{Fore.YELLOW}Now you have {Style.BRIGHT}{Fore.GREEN}{life} {Style.BRIGHT}{Fore.YELLOW}lifes")
                     time.sleep(0.5)
                     distance = distance + 100
-                    print(f"You have advanced {distance} meters deeper into the Python Maze")
+                    print(f"{Style.BRIGHT}{Fore.YELLOW}You have advanced {Style.BRIGHT}{Fore.GREEN}{distance} {Style.BRIGHT}{Fore.YELLOW}meters deeper into the Python Maze")
                     print()
                     time.sleep(0.5)
-                    print("other paths led you:") 
+                    print(f"{Style.DIM}{Fore.WHITE}other paths led you:") 
                     time.sleep(0.5)   
-                    print(f"left to {"extra life" if way_to_left == "AL" else "free path" if way_to_left == "FW" else "battle with the python"}")  
+                    print(f"{Style.BRIGHT}{Fore.YELLOW}left to {(Style.BRIGHT + Fore.GREEN + 'extra life') if way_to_left == "AL" else (Style.BRIGHT + Fore.WHITE + 'free path') if way_to_left == "FW" else (Style.BRIGHT + Fore.RED + 'battle with the python')}")  
                     time.sleep(0.5)  
-                    print(f"right to {"extra life" if way_to_right == "AL" else "free path" if way_to_right == "FW" else "battle with the python"}")
+                    print(f"{Style.BRIGHT}{Fore.YELLOW}right to {(Style.BRIGHT + Fore.GREEN + 'extra life') if way_to_right == "AL" else (Style.BRIGHT + Fore.WHITE + 'free path') if way_to_right == "FW" else (Style.BRIGHT + Fore.RED + 'battle with the python')}")
                     time.sleep(0.5)  
 
                 elif answer in ['straight', 's', 'S'] and  way_to_straight == "FW":
