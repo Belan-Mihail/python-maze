@@ -9,7 +9,7 @@ colorama.init(autoreset=True)
 
 def play_adventure(route, adventure_questions):
     
-    chance_list = ["AL"] * 5 + ["FW"] * 10 + ["Q"] * 45
+    chance_list = ["AL"] * 5 + ["FW"] * 10 + ["Q"] * 55
     adventure_questions = ad[:]
     
     
@@ -56,7 +56,7 @@ def play_adventure(route, adventure_questions):
             print()
             time.sleep(0.5)
             life = 0
-            print(f"{Style.BRIGHT}{Fore.YELLOW}You covered {distance} meters before Python ate you.")
+            print(f"{Style.BRIGHT}{Fore.YELLOW}You covered {Style.BRIGHT}{Fore.GREEN}{distance} {Style.BRIGHT}{Fore.YELLOW}meters before Python ate you.")
             break
         else:
             
@@ -115,47 +115,47 @@ def play_adventure(route, adventure_questions):
                 elif answer in ['left', 'l', 'L'] and  way_to_left == "Q":
                     print()
                     time.sleep(0.5)
-                    print("You are being attacked by a python!")
+                    print(f"{Style.BRIGHT}{Fore.RED}You are being attacked by a python!")
                     print()
                     time.sleep(0.5)
-                    print("other paths led you:") 
+                    print(f"{Style.DIM}{Fore.WHITE}other paths led you:") 
                     time.sleep(0.5)   
-                    print(f"right to {"extra life" if way_to_right == "AL" else "free path" if way_to_right == "FW" else "battle with the python"}")  
+                    print(f"{Style.BRIGHT}{Fore.YELLOW}right to {(Style.BRIGHT + Fore.GREEN + 'extra life') if way_to_right == "AL" else (Style.BRIGHT + Fore.WHITE + 'free path') if way_to_right == "FW" else (Style.BRIGHT + Fore.RED + 'battle with the python')}")  
                     time.sleep(0.5)
-                    print(f"straight to {"extra life" if way_to_straight == "AL" else "free path" if way_to_straight == "FW" else "battle with the python"}")
+                    print(f"{Style.BRIGHT}{Fore.YELLOW}straight to {(Style.BRIGHT + Fore.GREEN + 'extra life') if way_to_straight == "AL" else (Style.BRIGHT + Fore.WHITE + 'free path') if way_to_straight == "FW" else (Style.BRIGHT + Fore.RED + 'battle with the python')}")
                     print()
                     time.sleep(0.5)
                     random_question_index = random.randint(0, len(adventure_questions) - 1)
                     question = adventure_questions.pop(random_question_index)
-                    print(f"{question['question']}\n{quit_game}")
+                    print(f"{Style.BRIGHT}{Fore.YELLOW}{question['question']}\n{Style.DIM}{Fore.LIGHTYELLOW_EX}{quit_game}")
                     print()
                     time.sleep(0.5)
                     user_answer = input().lower()
                     if user_answer.lower() == "q":
                         time.sleep(0.5)
                         life = 0
-                        print(f"You covered {distance} meters before Python ate you.")
+                        print(f"{Style.BRIGHT}{Fore.YELLOW}You covered{Style.BRIGHT}{Fore.GREEN} {distance} {Style.BRIGHT}{Fore.YELLOW}meters before Python ate you.")
                         time.sleep(0.5)
                         break
                     else:
                         if user_answer in question['answer']:
                             print()
                             time.sleep(0.5)
-                            print("Correct!")
+                            print(f"{Style.BRIGHT}{Fore.GREEN}Correct!")
                             time.sleep(0.5)
                             distance = distance + 100
-                            print(f"You have advanced {distance} meters deeper into the Python Maze")
+                            print(f"{Style.BRIGHT}{Fore.YELLOW}You have advanced {Style.BRIGHT}{Fore.GREEN}{distance} {Style.BRIGHT}{Fore.YELLOW}meters deeper into the Python Maze")
                             time.sleep(0.5)
                             
                         else:
                             print()
                             time.sleep(0.5)
-                            print("Incorrect.")
+                            print(f"{Style.BRIGHT}{Fore.RED}Incorrect.")
                             time.sleep(0.5)
                             life = life - 1
 
                             if life >= 1:
-                                print(f"You've wasted your life. {life} more and the python will eat you.")
+                                print(f"{Style.BRIGHT}{Fore.YELLOW}You've wasted your life. {Style.BRIGHT}{Fore.RED}{life} {Style.BRIGHT}{Fore.YELLOW}more and the python will eat you.")
                                 time.sleep(0.5)
                                 
 
