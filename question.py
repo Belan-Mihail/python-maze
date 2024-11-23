@@ -9,29 +9,38 @@ route = [
 print(route[0])
 
 adventure_questions = [
-    {
-        'question': 'What is the output of the following code? print("Hello, world!")',
-        'answer': ['hello, world!'],
-
-    },
-    {
-        'question': 'What is this [1, 2, 3, "apple", "banana"] a dictionary or a list?',
-        'answer': ['list'],
-
-    },
-    {
-        'question': 'Is it possible to change elements in tupl after creation?',
-        'answer': ['no'],
-
-    },
-    {
-        'question': 'What word defines the function?',
-        'answer': ['def'],
-
-    },
-    {
-        'question': 'What function generates a sequence of numbers',
-        'answer': ['range', 'range()'],
-
-    },
+    {'question': 'What is the output of the following code? print("Hello, world!")','answer': ['hello, world!']},
+    {'question': 'What is this [1, 2, 3, "apple", "banana"] a dictionary or a list?', 'answer': ['list']},
+    {'question': 'Is it possible to change elements in tupl after creation?', 'answer': ['no']},
+    {'question': 'What word defines the function?', 'answer': ['def']},
+    {'question': 'What function generates a sequence of numbers', 'answer': ['range', 'range()']},
+    {'question': 'What is the data type of the value 3.14?', 'answer': ['float']},
+    {'question': 'What is the output of 2 ** 3?', 'answer': ['8']},
+    {'question': 'How do you create an empty list (use as list name "list1")?', 'answer': ["list1 = []"]},
+    {'question': 'What is the difference between a list and a tuple?', 'answer': ['Lists are mutable, while tuples are immutable.']},
+    {'question': 'How do you access the third element in a list named "my_list"?', 'answer': ['my_list[2]']},
+    {'question': 'What is the purpose of the "range()" function?', 'answer': ['To generate a sequence of numbers.']},
+    {'question': 'How do you define a function in Python?', 'answer': ['def function_name(parameters):']},
+    {'question': 'What is the purpose of the "if" statement?', 'answer': ['To execute code conditionally.']},
+    {'question': 'What is the difference between "==" and "is" operators?', 'answer': ['"==" checks for equality in value, while "is" checks for object identity.']},
+    {'question': 'What is a dictionary in Python?', 'answer': ['An unordered collection of key-value pairs.']},
+    {'question': 'How do you add an element to a set?', 'answer': ['my_set.add(element)']},
+    {'question': 'What is the purpose of the "try-except" block?', 'answer': ['To handle exceptions.']},
+    {'question': 'What is the output of "len(None)?"', 'answer': ['TypeError']},
+    {'question': 'How do you create a class in Python?', 'answer': ['class MyClass:']},
+    {'question': 'What is inheritance in Python?', 'answer': ['A mechanism where a class can inherit attributes and methods from a parent class.']},
+    {'question': 'What is polymorphism in Python?', 'answer': ['The ability of objects of different classes to respond to the same method call in different ways.']},
+    {'question': 'What is the purpose of the "__init__" method in a class?', 'answer': ['It is the constructor of the class.']},
+    {'question': 'What is a lambda function?', 'answer': ['A small, anonymous function.']},
+    {'question': 'What is the purpose of the "map()" function?', 'answer': ['To apply a function to every item of an iterable.']},
+    {'question': 'What is a generator in Python?', 'answer': ['A function that returns an iterator.']},
+    {'question': 'What is the difference between a list comprehension and a generator expression?', 'answer': ['List comprehensions create lists, while generator expressions create generators.']},
+    {'question': 'What is the purpose of the "with" statement?', 'answer': ['To automatically close resources.']},
+    {'question': 'What is a module in Python?', 'answer': ['A file containing Python definitions and statements.']},
+    {'question': 'How do you import a module in Python?', 'answer': ['import module_name']},
+    {'question': 'What is the purpose of the "__name__" variable?', 'answer': ['To determine if the script is being run directly or imported as a module.']},
+    {'question': 'What is a decorator in Python?', 'answer': ['A function that takes another function and extends its behavior.']},
+    {'question': 'What is the purpose of the *args and **kwargs arguments?', 'answer': ['To pass a variable number of arguments to a function.']},
+    {'question': 'What is a context manager in Python?', 'answer': ['An object that defines the runtime context for a with statement.']},
+    {'question': 'What is the purpose of the `numpy` library?', 'answer': ['For numerical computations.']},
 ]
