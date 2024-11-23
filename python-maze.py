@@ -51,7 +51,7 @@ def play_adventure(route, adventure_questions):
         time.sleep(0.5)
         print(f"{Style.BRIGHT}{Fore.YELLOW}{current_route_questions}\n{Style.DIM}{Fore.LIGHTYELLOW_EX}{quit_game}")
         time.sleep(0.5)
-        answer = input().lower()
+        answer = input()
         if answer.lower() == "q":
             print()
             time.sleep(0.5)
@@ -130,7 +130,7 @@ def play_adventure(route, adventure_questions):
                     print(f"{Style.BRIGHT}{Fore.YELLOW}{question['question']}\n{Style.DIM}{Fore.LIGHTYELLOW_EX}{quit_game}")
                     print()
                     time.sleep(0.5)
-                    user_answer = input().lower()
+                    user_answer = input()
                     if user_answer.lower() == "q":
                         time.sleep(0.5)
                         life = 0
@@ -212,7 +212,7 @@ def play_adventure(route, adventure_questions):
                     print(f"{Style.BRIGHT}{Fore.YELLOW}{question['question']}\n{Style.DIM}{Fore.LIGHTYELLOW_EX}{quit_game}")
                     print()
                     time.sleep(0.5)
-                    user_answer = input().lower()
+                    user_answer = input()
                     if user_answer.lower() == "q":
                         time.sleep(0.5)
                         life = 0
@@ -294,7 +294,7 @@ def play_adventure(route, adventure_questions):
                     print(f"{Style.BRIGHT}{Fore.YELLOW}{question['question']}\n{Style.DIM}{Fore.LIGHTYELLOW_EX}{quit_game}")
                     print()
                     time.sleep(0.5)
-                    user_answer = input().lower()
+                    user_answer = input()
                     if user_answer.lower() == "q":
                         time.sleep(0.5)
                         print()
