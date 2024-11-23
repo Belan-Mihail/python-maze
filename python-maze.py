@@ -152,6 +152,9 @@ def play_adventure(route, adventure_questions):
                             time.sleep(0.5)
                             print(f"{Style.BRIGHT}{Fore.RED}Incorrect.")
                             time.sleep(0.5)
+                            print()
+                            print(f"{Style.BRIGHT}{Fore.YELLOW}The correct answer was: {Fore.GREEN}{question['answer']}")
+                            time.sleep(0.5)
                             life = life - 1
 
                             if life >= 1:
@@ -233,6 +236,9 @@ def play_adventure(route, adventure_questions):
                             print()
                             time.sleep(0.5)
                             print(f"{Style.BRIGHT}{Fore.RED}Incorrect.")
+                            time.sleep(0.5)
+                            print()
+                            print(f"{Style.BRIGHT}{Fore.YELLOW}The correct answer was: {Fore.GREEN}{question['answer']}")
                             time.sleep(0.5)
                             life = life - 1
                             
@@ -316,6 +322,9 @@ def play_adventure(route, adventure_questions):
                             print()
                             time.sleep(0.5)
                             print(f"{Style.BRIGHT}{Fore.RED}Incorrect.")
+                            time.sleep(0.5)
+                            print()
+                            print(f"{Style.BRIGHT}{Fore.YELLOW}The correct answer was: {Fore.GREEN}{question['answer']}")
                             time.sleep(0.5)
                             life = life - 1
 
