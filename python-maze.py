@@ -4,6 +4,7 @@ import colorama
 from question import route
 from question import adventure_questions as ad
 from graph import print_game_name
+from graph import printPython
 
 from colorama import Fore, Style
 colorama.init(autoreset=True)
@@ -50,6 +51,8 @@ def play_adventure(route, adventure_questions):
             time.sleep(2)
             print()
             time.sleep(0.5)
+            printPython()
+            time.sleep(2)
             print()
             time.sleep(0.5)
         else:
