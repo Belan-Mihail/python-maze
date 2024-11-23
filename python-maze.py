@@ -6,6 +6,7 @@ from question import adventure_questions as ad
 from graph import print_game_name
 from graph import printPython
 from graph import print_user_not_win
+from graph import print_user_win
 
 from colorama import Fore, Style
 colorama.init(autoreset=True)
@@ -358,6 +359,12 @@ def play_adventure(route, adventure_questions):
         time.sleep(0.5)
         print()
         print(f"{Style.BRIGHT}{Fore.GREEN}There is another great news. You ate Python")
+        time.sleep(0.5)
+        print()
+        print_user_win()
+        time.sleep(0.5)
+        print()
+
     else:
         if not answer == "q" and not user_answer == "q":
             time.sleep(0.5)

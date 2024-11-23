@@ -134,46 +134,85 @@ def print_user_not_win():
     print(f"{Style.BRIGHT}{Fore.RED}                          .:-:...+-+#+=.=-::=+-%%%%%#  ")
     time.sleep(0.1)
 
-user_win = """
-                                                                                     
-                                           .:....::...                                    
-                                      .--:-. . ::     :                                   
-                                  ...::. .:...:: .  :-:-     .-==+***++=:.                
-                                 :...:   :--:  :...:=+##=+##*%%%%%%**#%%%%*:              
-                               .-+::..::. --:::. ..:*%%%%%%%%%%%%%%*#*-..--.              
-                          .-+*+###*..:=...:-=:  . ..:########%%%%%%%%%*=:                 
-                       -+##*#####*%*-:+-:::- .==.    +-=::......:-=+#%%+--.               
-                    -+#****#%%*%%*##*-=-- --+=-*.    :==              .-- .:              
-                 .=%****%%##%%==--:......--:: .-.     *                                   
-                +%*#*#%#*%%-:    :=.. .--:      ..  .-:                                   
-              .#*%#*#*%%+..      .-    :=     .:    -.                                    
-             .#%#%*%%#=:          -.    .-..      .-    .::------:.                       
-             +%+%*##*+:            -.:--:=-..    .:*==+**-=#+#++###+**+-                  
-             #%*%###*+             = :  .  .       ++=#=+%**+*##***#%%**%+-               
-             ##=#%*%%%-            = :...          *#+***##%%#%%##%%***#%*##:             
-             =##*####*##==-::--=++*# :.: .:        *#%%*#%+%%+*%=#%+#%##+%##==            
-              *%+:*=%*%%%%%%%%%%%%%% :.-.::        ##-+=:-.:-.-::*-+#+#%%+%##%-           
-               +%*#==**+%#%%%%%%%+#% ..:..-        -               .:+**%*%%+*#           
-                :+#%****-+##+=%###%*  ::: :        -                .+*##*%#=#%           
-                   .-=+*####%%##***-  : :          -              .-*####*#*%**           
-                            ......=   . :          =          .:=+*###%%+#::%#.           
-                   :-=+*#%**%%#*%%##%##**++===-----*---==++**#%##%%%%*#*=#=%#.            
-               .=+=*#**#%#%%%%%%%%####+#%#+#%%%%%%%%%%%%%%%%%%%%%*%=-*:.*%#=              
-             :-=*+*****#*#****#*#*#######%%%#%**%%*+#####%*%%%#*%+-+#+#%*=.               
-           .*#=#**#%#%*%+%+%+*#*%*%#%##%########%%%%%%%*+%%#==#*###%*+:                   
-          :+-*+##%#**--...      = ..:::=-+=***#######%#%%%%##**+=-.                       
-          ##*+%##*-.           ::                   -.                                    
-         -+*#*%#*.             =                     -                                    
-         =##*###=              +                     -:---=-==--.                         
-         :%+%+%#*.             +                      *#**#*#*###*+:                      
-          *###*%##:.          .=                      .#=--::.:-=*#**.                    
-           *#*%*##%*+--..     .=                       =          -#*#                    
-            -#%*#**###%*%*%#%##=                       .-          -##:                   
-              :+###%*#*###*###*+                        =          -*%.                   
-:-               .-=+*#**%#*=#%*                        +         .*#=                    
-:-                         .   =                        +       :=#*:                     
-.-                             .:                  .:::-*--==+***=.                       
-:-                              -                      :. ....                            
-.-                              :.                     .                                  
-.:.                              :                            
-"""
+
+def print_user_win():
+    print(f"{Style.BRIGHT}{Fore.GREEN}                                           .:....::...   ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}                                      .--:-. . ::     :                    ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}                                  ...::. .:...:: .  :-:-     .-==+***++=:.          ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}                                 :...:   :--:  :...:=+##=+##*%%%%%%**#%%%%*:     ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}                               .-+::..::. --:::. ..:*%%%%%%%%%%%%%%*#*-..--.    ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}                          .-+*+###*..:=...:-=:  . ..:########%%%%%%%%%*=:   ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}                       -+##*#####*%*-:+-:::- .==.    +-=::......:-=+#%%+--.  ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}                    -+#****#%%*%%*##*-=-- --+=-*.    :==              .-- .:      ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}                 .=%****%%##%%==--:......--:: .-.     *    ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}                +%*#*#%#*%%-:    :=.. .--:      ..  .-:        ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}              .#*%#*#*%%+..      .-    :=     .:    -. ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}             .#%#%*%%#=:          -.    .-..      .-    .::------:.         ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}             +%+%*##*+:            -.:--:=-..    .:*==+**-=#+#++###+**+-     ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}             #%*%###*+             = :  .  .       ++=#=+%**+*##***#%%**%+-   ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}             ##=#%*%%%-            = :...          *#+***##%%#%%##%%***#%*##:   ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}             =##*####*##==-::--=++*# :.: .:        *#%%*#%+%%+*%=#%+#%##+%##==  ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}              *%+:*=%*%%%%%%%%%%%%%% :.-.::        ##-+=:-.:-.-::*-+#+#%%+%##%-  ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}               +%*#==**+%#%%%%%%%+#% ..:..-        -               .:+**%*%%+*#  ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}                :+#%****-+##+=%###%*  ::: :        -                .+*##*%#=#%  ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}                   .-=+*####%%##***-  : :          -              .-*####*#*%**   ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}                            ......=   . :          =          .:=+*###%%+#::%#.   ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}                   :-=+*#%**%%#*%%##%##**++===-----*---==++**#%##%%%%*#*=#=%#.  ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}               .=+=*#**#%#%%%%%%%%####+#%#+#%%%%%%%%%%%%%%%%%%%%%*%=-*:.*%#=   ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}             :-=*+*****#*#****#*#*#######%%%#%**%%*+#####%*%%%#*%+-+#+#%*=.  ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}           .*#=#**#%#%*%+%+%+*#*%*%#%##%########%%%%%%%*+%%#==#*###%*+:   ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}          :+-*+##%#**--...      = ..:::=-+=***#######%#%%%%##**+=-.   ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}          ##*+%##*-.           ::                   -.           ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}         -+*#*%#*.             =                     -   ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}         =##*###=              +                     -:---=-==--.    ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}         :%+%+%#*.             +                      *#**#*#*###*+:     ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}          *###*%##:.          .=                      .#=--::.:-=*#**.  ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}           *#*%*##%*+--..     .=                       =          -#*#      ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}            -#%*#**###%*%*%#%##=                       .-          -##:   ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}              :+###%*#*###*###*+                        =          -*%.  ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}:-               .-=+*#**%#*=#%*                        +         .*#=  ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}:-                         .   =                        +       :=#*:      ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}.-                             .:                  .:::-*--==+***=. ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}:-                              -                      :. ....     ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}.-                              :.                     .    ")
+    time.sleep(0.1)
+    print(f"{Style.BRIGHT}{Fore.GREEN}.:.                              :  ")
+    time.sleep(0.1)
