@@ -5,6 +5,7 @@ from question import route
 from question import adventure_questions as ad
 from graph import print_game_name
 from graph import printPython
+from graph import print_user_not_win
 
 from colorama import Fore, Style
 colorama.init(autoreset=True)
@@ -363,11 +364,18 @@ def play_adventure(route, adventure_questions):
             print()
             print(f'{Style.BRIGHT}{Fore.RED}You lost your last life and Python ate you.')
             time.sleep(0.5)
+            print_user_not_win()
+            time.sleep(0.5)
             print()
         else:
             time.sleep(0.5)
             print()
             print(f'{Style.BRIGHT}{Fore.RED}You tried to escape the maze but Python ate you')
+            time.sleep(0.5)
+            print()
+            print_user_not_win()
+            time.sleep(0.5)
+            print()
             
            
     if not answer == "q" and not user_answer == "q":
