@@ -26,33 +26,33 @@ def print_game_name():
 
 def printPython():
     print(f"{Style.BRIGHT}{Fore.YELLOW}                        :::---:.                                                ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}                     :=####******++=:          :+*###%#+==:                ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}                   =*++***#######*+###-      =*+*#####**####=.           ..:::::.    ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}                 .*#*##+-..   .:=##*+*#+.   *#*+%%%%%#*###***+:        :+########.    ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}                 +#*+*.           -*%##**  +##**##-...:-*###++*.    :=*#**+**#*=:       ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}                 **+*:             .%#**#= ##++%%-       -#%#*#*   =##*#=+*#+:   ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}          ...    %*+*.              =##+##.*+*##*:        +****%. .%*+*   ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}        ==-:=+:  +*+*=              =#**## *+##%#+        =##*+*. .**#+         ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}       =.    .#= .##**+             *%**## -***###+       *%%*+*   %*#%.    ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}       =      -#.  =*###:          :##+*#=  +++**##*:     *##+#=   =%#%+     ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}       .-     :#:   :*###+         ###=++.   -####*+*+.  :*%#*%.    ***#.   ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}        :     :*:     -**#*.      =##+*#-     .*##*+%##: :*%##*     *##%-    ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}              -*:      .*##*.   .+**+##*        :++++#%#:.+##**.   .##%#.       ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}              =#-        +***   #%%*+**          .*##**#+ -*#+##=:=#***+  ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}              -#+        :#*%. =%%*=+=            :#**+*+: -####*+***+=     ")
     time.sleep(0.2)
     print(f"{Style.BRIGHT}{Fore.YELLOW}               +#:       .%+%. +*#++#.            .##++##:   -+###*=:      ")
@@ -60,50 +60,17 @@ def printPython():
     print(f"{Style.BRIGHT}{Fore.YELLOW}               :*+:      =#*=  **%*#*:           .*##+%#%.     ")
     time.sleep(0.2)
     print(f"{Style.BRIGHT}{Fore.YELLOW}                :#**=--=+##=   -*#*#**=.       :-+#**###-     ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}                  -+*+**+=.     -+*#+*###==++*####*+###:      ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}                                 :*##**++*####*####%*:    ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}                                   :+#%%#########*=:      ")
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.YELLOW}                                      .::-::--:.  ")
-    time.sleep(0.2)
+    time.sleep(0.1)
 
 
-
-user_lose_or_exit = """
-                 
-                 
-              
-                 
-                  
-               
-            
-               
-               
-               
-                    
-                           
-                                
-                              
-                            
-                          
-                          
-                   
-                                                     
-                           
-                           
-                  
-                                       
-                                           
-                           
-                                   
-                                
-                                   
-                                    
-   
-"""
 
 def print_user_not_win():
     print(f"{Style.BRIGHT}{Fore.RED}                                                            .-++--+=:    ")
@@ -152,19 +119,19 @@ def print_user_not_win():
     time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.RED}            -#%%+--++@#=--:-**--==:     ")
     time.sleep(0.1)
-    print(f"{Style.BRIGHT}{Fore.RED}             -**@#=+**#+=+-:-+*####*--:    ")
+    print(f"{Style.BRIGHT}{Fore.RED}             -**@#=+**#+=+-:-+*####*--    ")
     time.sleep(0.1)
-    print(f"{Style.BRIGHT}{Fore.RED}              -**%#*#+==-::::::-++==:::----:::......    ")
+    print(f"{Style.BRIGHT}{Fore.RED}              -**%#*#+==-::::::-++==:::-    ")
     time.sleep(0.1)
-    print(f"{Style.BRIGHT}{Fore.RED}               .+**#*+==#%+-+*+=::*#-+**=::*@#:. :::-. ")
+    print(f"{Style.BRIGHT}{Fore.RED}               .+**#*+==#%+-+*+=::*#-+**=:")
     time.sleep(0.1)
-    print(f"{Style.BRIGHT}{Fore.RED}                 :+****++++*@@%%%=--*%%%%%#-::-=:....     ")
+    print(f"{Style.BRIGHT}{Fore.RED}                 :+****++++*@@%%%=--*%%%%%#-:")
     time.sleep(0.1)
-    print(f"{Style.BRIGHT}{Fore.RED}                   .:*%+=++++*+*++=--=++---:   ::.     ")
+    print(f"{Style.BRIGHT}{Fore.RED}                   .:*%+=++++*+*++=--=++---:::.     ")
     time.sleep(0.1)
     print(f"{Style.BRIGHT}{Fore.RED}                      ..==+=*++++*++==+=-=---::::.    ")
     time.sleep(0.1)
-    print(f"{Style.BRIGHT}{Fore.RED}                          .:-:...+-+#+=.=-::=+-  ")
+    print(f"{Style.BRIGHT}{Fore.RED}                          .:-:...+-+#+=.=-::=+-%%%%%#  ")
     time.sleep(0.1)
 
 user_win = """
